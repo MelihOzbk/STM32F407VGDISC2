@@ -10,25 +10,27 @@ Cube IDE üzerinde HAL ile 0-9 veya 0-100 kadar sayan sayaç yapımı
 Cube ide penceresi üzerinde STM32 Project Sekmesi açık değilse
 File> New > STM32 Project
 ![alt text](https://github.com/MelihOzbk/STM32F407VGDISC2/blob/main/Proje%201/Pasted%20image%2020231018181824.png?raw=true)
-![[Pasted image 20231018181824.png]]
+
 Board Selector Penceresine girdikten sonra Commerical Part Number kısmına "STM32F407G-DISC1" yazıyoruz.
-![[Pasted image 20231018182121.png]]
+![alt text](https://github.com/MelihOzbk/STM32F407VGDISC2/blob/main/Proje%201/Pasted%20image%2020231018182121.png?raw=true)
 Proje ismini girdikten sonra finish yapıyoruz 
-![[Pasted image 20231018182227.png]]
+![alt text](https://github.com/MelihOzbk/STM32F407VGDISC2/blob/main/Proje%201/Pasted%20image%2020231018182227.png?raw=true)
 Kart üzerindeki fonksiyonların standart şekilde çalışabilmesi için evet diyoruz
 # Bir adet 7SD ile yapımı
 Sadece 0 dan 9 a kadar sayma yapabilir
 
 Açılan IOC sekmesi üzerinde 7 Segment Display için kullanacağımız pinleri GPIO_OUTPUT olarak değiştiriyoruz
-![[Pasted image 20231018182712.png]]
+
+![alt text](https://github.com/MelihOzbk/STM32F407VGDISC2/blob/main/Proje%201/Pasted%20image%2020231018182712.png?raw=true)
 Kullandığımız pinleri harflendirmek ve Maksimum çıkış hızını ayarlamak için System Core altından GPIO bölümüne giriyoruz
 
 Kullandığımız pinleri bağlı oldukları 7 Segment Display'in pinleri için Harflendiriyoruz
 Örneğin PE15 7SD üzerinde A pinine bağlı olduğu için A ismini verdim
 
 
-![[Pasted image 20231018182921.png]]
-![[150px-7_Segment_Display_with_Labeled_Segments.svg.png]]
+![alt text](https://github.com/MelihOzbk/STM32F407VGDISC2/blob/main/Proje%201/Pasted%20image%2020231018182921.png?raw=true)
+
+![alt text](https://github.com/MelihOzbk/STM32F407VGDISC2/blob/main/Proje%201/150px-7_Segment_Display_with_Labeled_Segments.svg.png)
 IOC Dosyamızı kaydettikten sonra gerekli çekirdek dosyalarını kendisi oluşturduktan sonra main.c dosyasını bize açacaktır açmazsa Core>Src altında bulabilirsiniz
 
 Kodların başlatıldığı veya sonsuz tekrara uğradığı bölüm öncesinde 
@@ -64,7 +66,7 @@ for (int var = 0; var < 10; ++var) {
 ``` 
  * var değerinin sayma sayıları içerisinde aldığı değerler için hangi pinleri açmasını gerektiğini gösteren algoritmayı bu şekilde ifade edebiliriz
  * Örneğin var değerinin 0 olduğu durumda 2 boyutlu digit dizisi içerisinden 0 yazması için pinin açık veya kapalılık durumunu belirleyen değerlerini çeker A B C D E F için 1 G için 0 değerini alır
- * ![[Pasted image 20231018195046.png]]
+ * ![alt text](https://github.com/MelihOzbk/STM32F407VGDISC2/blob/main/Proje%201/Pasted%20image%2020231018195046.png?raw=true)
 
 # İki adet 7SD ile yapımı
 
