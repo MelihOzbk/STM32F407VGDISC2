@@ -123,6 +123,5 @@ Bir adetle benzer şekilde proje oluşturduktan ve pinleri ABCDEFG olarak harfle
 * Tendigit değeri var sayısının onlar basamağını alır ve birinci 7SD için kullanılacak değeri yansıtır
 * digi ise birler basamağını alır ve ikinci 7SD kullanılacak değeri yansıtır.
 # Örnek IOC görüntüsü
-
-![[Pasted image 20231018201422.png]]
+![alt text](https://github.com/MelihOzbk/STM32F407VGDISC2/blob/main/Proje%201/Pasted%20image%2020231018201422.png?raw=true)
 # Örnek kodları ise SRC/main.c içinde bulabilirsiniz.
