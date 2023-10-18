@@ -9,6 +9,7 @@ Cube IDE üzerinde HAL ile 0-9 veya 0-100 kadar sayan sayaç yapımı
 ## Cube IDE üzerinde Proje açma
 Cube ide penceresi üzerinde STM32 Project Sekmesi açık değilse
 File> New > STM32 Project
+![alt text](https://github.com/MelihOzbk/STM32F407VGDISC2/blob/main/Proje%201/Pasted%20image%2020231018181824.png?raw=true)
 ![[Pasted image 20231018181824.png]]
 Board Selector Penceresine girdikten sonra Commerical Part Number kısmına "STM32F407G-DISC1" yazıyoruz.
 ![[Pasted image 20231018182121.png]]
